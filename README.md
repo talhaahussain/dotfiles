@@ -1,2 +1,2 @@
 # dotfiles
-Personal dotfiles.
+Dotfiles for Arch Linux configuration.
