@@ -10,6 +10,7 @@
 import XMonad
 import Data.Monoid
 import System.Exit
+import Graphics.X11.ExtraTypes.XF86
 
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
@@ -137,11 +138,11 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. shiftMask, xK_x     ), spawn "slock")
 
     -- Volume up
-    -- , ((       , XF86AudioRaiseVolume), spawn "amixer set Master 5%+")
+    , ((0   , xF86XK_AudioRaiseVolume), spawn "amixer set Master 5%+")
     -- Volume down
-    -- , ((       , XF86AudioLowerVolume), spawn "amixer set Master 5%-")
+    , ((0   , xF86XK_AudioLowerVolume), spawn "amixer set Master 5%-")
     -- Volume mute
-    -- , ((       , XF86AudioMute       ), spawn "amixer set Master toggle")
+    , ((0   , xF86XK_AudioMute       ), spawn "amixer set Master toggle")
 
 
     ]
