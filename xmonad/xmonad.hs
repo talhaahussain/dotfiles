@@ -18,6 +18,7 @@ import qualified Data.Map        as M
 import Graphics.X11.ExtraTypes.XF86
 import XMonad.Util.Run
 import XMonad.Hooks.ManageDocks
+import XMonad.Layout.Spacing
 
 -- The preferred terminal program, which is used in a binding below and by
 -- certain contrib modules.
@@ -57,7 +58,7 @@ myWorkspaces    = ["1","2","3","4","5","6","7","8","9"]
 -- Border colors for unfocused and focused windows, respectively.
 --
 myNormalBorderColor  = "#dddddd"
-myFocusedBorderColor = "#ff0000"
+myFocusedBorderColor = "#660000"
 
 ------------------------------------------------------------------------
 -- Key bindings. Add, modify or remove key bindings here.
@@ -295,7 +296,7 @@ defaults = def {
         mouseBindings      = myMouseBindings,
 
       -- hooks, layouts
-        layoutHook         = myLayout,
+        layoutHook         = spacingWithEdge 2 $ myLayout,
         manageHook         = myManageHook,
         handleEventHook    = myEventHook,
         logHook            = myLogHook,
