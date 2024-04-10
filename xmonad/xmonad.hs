@@ -130,6 +130,20 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
     -- Run xmessage with a summary of the default keybindings (useful for beginners)
     , ((modm .|. shiftMask, xK_slash ), spawn ("echo \"" ++ help ++ "\" | xmessage -file -"))
+    
+    -- ADDITIONAL BINDINGS
+    
+    -- Lock machine 
+    , ((modm .|. shiftMask, xK_x     ), spawn "slock")
+
+    -- Volume up
+    -- , ((       , XF86AudioRaiseVolume), spawn "amixer set Master 5%+")
+    -- Volume down
+    -- , ((       , XF86AudioLowerVolume), spawn "amixer set Master 5%-")
+    -- Volume mute
+    -- , ((       , XF86AudioMute       ), spawn "amixer set Master toggle")
+
+
     ]
     ++
 
