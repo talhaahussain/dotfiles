@@ -1,5 +1,8 @@
 [user]
 	email = 73853725+talhaahussain@users.noreply.github.com
 	name = talhaahussain
+	signingkey = ~/.ssh/id_rsa.pub
 [core]
 	editor = vim
+[gpg]
+	format = ssh
