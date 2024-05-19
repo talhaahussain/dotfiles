@@ -3,6 +3,8 @@ Dotfiles for Arch Linux configuration.
 
 Note: these dotfiles make configurations available for three window managers (xmonad, awesomewm, i3). Window manager can be selected in `/xinit/.xinitrc`, with editing the final line such that it reads `exec <WM OF CHOICE>`. Currently, xmonad is the selected window manager.
 
+After performing an Arch update, write `$ xmonad --recompile` to fix a failing `startx` run.
+
 Below are screenshots of xmonad configuration in action, with captions.
 
 ![image](https://github.com/talhaahussain/dotfiles/assets/73853725/3c6a44ba-83e6-46e2-9d50-99dd8059df85)
