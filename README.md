@@ -1,9 +1,32 @@
 # dotfiles
 Dotfiles for Arch Linux configuration.
 
+### Usage
+
+1. Install GNU Stow and Git:
+
+```
+$ sudo pacman -S stow
+$ sudo pacman -S git
+```
+
+2. Clone this repository to `~/.dotfiles`:
+
+```
+$ git clone git@github.com:talhaahussain/dotfiles .dotfiles
+```
+
+3. Use `stow_all.sh` to symlink dotfiles to home directory:
+
+```
+$ bash stow_all.sh
+```
+
 Note: these dotfiles make configurations available for three window managers (xmonad, awesomewm, i3). Window manager can be selected in `/xinit/.xinitrc`, with editing the final line such that it reads `exec <WM OF CHOICE>`. Currently, xmonad is the selected window manager.
 
 After performing an Arch update, write `$ xmonad --recompile` to fix a failing `startx` run.
+
+### Screenshots
 
 Below are screenshots of xmonad configuration in action, with captions.
 
