@@ -10,7 +10,6 @@
 import XMonad
 import Data.Monoid
 import System.Exit
-import XMonad.Hooks.EwmhDesktops 
 
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
@@ -20,6 +19,7 @@ import Graphics.X11.ExtraTypes.XF86
 import XMonad.Util.Run
 import XMonad.Hooks.ManageDocks
 import XMonad.Layout.Spacing
+import XMonad.Hooks.EwmhDesktops 
 
 -- The preferred terminal program, which is used in a binding below and by
 -- certain contrib modules.
