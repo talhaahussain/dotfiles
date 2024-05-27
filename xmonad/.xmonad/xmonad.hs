@@ -10,6 +10,7 @@
 import XMonad
 import Data.Monoid
 import System.Exit
+import XMonad.Hooks.EwmhDesktops 
 
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
@@ -276,7 +277,7 @@ myStartupHook = return ()
 --
 main = do
   xmproc <- spawnPipe "xmobar -x 0 /home/talhaa/.config/xmobar/.xmobarrc"
-  xmonad $ docks defaults
+  xmonad $ docks $ ewmhFullscreen $ ewmh defaults
 
 -- A structure containing your configuration settings, overriding
 -- fields in the default config. Any you don't override, will
