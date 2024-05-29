@@ -74,7 +74,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     [ ((modm,               xK_Return), spawn $ XMonad.terminal conf)
 
     -- launch dmenu
-    , ((modm,               xK_r     ), spawn "dmenu_run -c -l 20 -fn Iosevka")
+    , ((modm,               xK_r     ), spawn "dmenu_run -c -l 20 -fn Iosevka -nb \"#270d06\" -sb \"#88000\"")
 
     -- launch gmrun
     , ((modm .|. shiftMask, xK_p     ), spawn "gmrun")
