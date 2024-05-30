@@ -11,3 +11,5 @@ set shiftwidth=4
 " on pressing tab, insert 4 spaces
 set expandtab
 
+" Always show line numbers
+set number
