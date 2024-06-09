@@ -3,22 +3,31 @@ Dotfiles for Arch Linux configuration.
 
 ### Usage
 
-1. Install GNU Stow and Git:
+0. [Install Arch Linux.](https://wiki.archlinux.org/title/Installation_guide)
 
-```
-$ sudo pacman -S stow
+1. Install Git:
+
+```bash
 $ sudo pacman -S git
 ```
 
 2. Clone this repository to `~/.dotfiles`:
 
-```
-$ git clone git@github.com:talhaahussain/dotfiles .dotfiles
+```bash
+$ cd ~
+$ git clone https://github.com/talhaahussain/dotfiles.git .dotfiles
+$ cd .dotfiles
 ```
 
-3. Use `stow_all.sh` to symlink dotfiles to home directory:
+3. Use pacman to install all packages from `pkglist.txt`:
 
+```bash
+$ pacman -S --needed - < pkglist.txt
 ```
+
+4. Use `stow_all.sh` to symlink dotfiles to home directory:
+
+```bash
 $ bash stow_all.sh
 ```
 
