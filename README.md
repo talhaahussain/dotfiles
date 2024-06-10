@@ -75,17 +75,20 @@ Image 6: Three terminal instances running as tiles in tall mode. The left termin
 <br>
 <br>
 
-![image](https://github.com/talhaahussain/dotfiles/assets/73853725/53aacdba-1f96-4e64-87ad-f59413d601b1)
+![image](https://github.com/talhaahussain/dotfiles/assets/73853725/8674850b-a0ad-4195-a451-82d983193de5)
 Image 7: A single Firefox instance.
 <br>
 <br>
 <br>
 
-![image](https://github.com/talhaahussain/dotfiles/assets/73853725/1f86299d-2116-4414-987e-625578e76c27)
-Image 8: A single Firefox instance, running in full-screen.
+![image](https://github.com/talhaahussain/dotfiles/assets/73853725/fa5ae1c4-e3cf-4271-adab-93519a53cf17)
+Image 8: A dmenu instance, running over two Firefox windows.
 <br>
 <br>
 <br>
 
-![image](https://github.com/talhaahussain/dotfiles/assets/73853725/bad3825b-44f8-4611-8f85-93746c54ffd7)
-Image 9: "Starchild".
+![image](https://github.com/talhaahussain/dotfiles/assets/73853725/a2bd154e-291d-4d6e-a3b8-9897e8556df2)
+Image 9: A single Firefox instance, running in full-screen.
+<br>
+<br>
+<br>
