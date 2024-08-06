@@ -28,7 +28,7 @@ $ pacman -S --needed - < pkglist.txt
 4. Use `stow_all.sh` to symlink dotfiles to home directory:
 
 ```bash
-$ bash stow_all.sh
+$ source stow_all.sh
 ```
 
 Note: these dotfiles make configurations available for three window managers (xmonad, awesomewm, i3). Window manager can be selected in `/xinit/.xinitrc`, with editing the final line such that it reads `exec <WM OF CHOICE>`. Currently, xmonad is the selected window manager.
