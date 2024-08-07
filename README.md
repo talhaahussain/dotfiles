@@ -1,7 +1,7 @@
 # dotfiles
 Dotfiles for Arch Linux configuration.
 
-### Usage
+### Installation, Setup and Usage
 
 0. [Install Arch Linux.](https://wiki.archlinux.org/title/Installation_guide)
 
@@ -31,9 +31,19 @@ $ pacman -S --needed - < pkglist.txt
 $ source stow_all.sh
 ```
 
-Note: these dotfiles make configurations available for three window managers (xmonad, awesomewm, i3). Window manager can be selected in `/xinit/.xinitrc`, with editing the final line such that it reads `exec <WM OF CHOICE>`. Currently, xmonad is the selected window manager.
+### Window Managers
+
+These dotfiles make configurations available for three window managers (xmonad, awesomewm, i3). Window manager can be selected in `/xinit/.xinitrc`, with editing the final line such that it reads `exec <WM OF CHOICE>`. Currently, xmonad is the selected window manager.
 
 After performing an Arch update, write `$ xmonad --recompile` to fix a failing `startx` run.
+
+### Recompiling `pkglist.txt`
+
+To recompile `pkglist.txt`, use:
+
+```bash
+source compile_pkglist.sh
+```
 
 ### Screenshots
 
