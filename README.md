@@ -32,18 +32,12 @@ $ source install_pkgs.sh
 $ source stow_all.sh
 ```
 
-### Window Managers
-
-These dotfiles make configurations available for three window managers (xmonad, awesomewm, i3). Window manager can be selected in `/xinit/.xinitrc`, with editing the final line such that it reads `exec <WM OF CHOICE>`. Currently, xmonad is the selected window manager.
-
-After performing an Arch update, write `$ xmonad --recompile` to fix a failing `startx` run.
-
 ### Applying Updates
 
-To update the system, use:
+To update the system and all Arch packages, use:
 
 ```bash
-source update_pkgs.sh
+$ source update_pkgs.sh
 ```
 
 ### Recompiling `pkglist.txt`
@@ -51,8 +45,12 @@ source update_pkgs.sh
 To recompile `pkglist.txt`, use:
 
 ```bash
-source compile_pkglist.sh
+$ source compile_pkglist.sh
 ```
+
+### Window Managers
+
+These dotfiles make configurations available for three window managers (xmonad, awesomewm, i3). Window manager can be selected in `/xinit/.xinitrc`, with editing the final line such that it reads `exec <WM OF CHOICE>`. Currently, xmonad is the selected window manager.
 
 ### Screenshots
 
