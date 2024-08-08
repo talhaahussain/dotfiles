@@ -37,6 +37,14 @@ These dotfiles make configurations available for three window managers (xmonad, 
 
 After performing an Arch update, write `$ xmonad --recompile` to fix a failing `startx` run.
 
+### Applying Updates
+
+To update the system, use:
+
+```bash
+source update.sh
+```
+
 ### Recompiling `pkglist.txt`
 
 To recompile `pkglist.txt`, use:
