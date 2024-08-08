@@ -1,4 +1,5 @@
 # dotfiles
+
 Dotfiles for Arch Linux configuration.
 
 ### Installation, Setup and Usage
@@ -19,10 +20,10 @@ $ git clone https://github.com/talhaahussain/dotfiles.git .dotfiles
 $ cd .dotfiles
 ```
 
-3. Use pacman to install all packages from `pkglist.txt`:
+3. Use `install_pkgs.sh` to install all packages from `pkglist.txt`:
 
 ```bash
-$ pacman -S --needed - < pkglist.txt
+$ source install_pkgs.sh
 ```
 
 4. Use `stow_all.sh` to symlink dotfiles to home directory:
@@ -42,7 +43,7 @@ After performing an Arch update, write `$ xmonad --recompile` to fix a failing `
 To update the system, use:
 
 ```bash
-source update.sh
+source update_pkgs.sh
 ```
 
 ### Recompiling `pkglist.txt`
