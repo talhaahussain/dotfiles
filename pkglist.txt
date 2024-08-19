@@ -94,6 +94,7 @@ vlc
 wget
 which
 xautolock
+xclip
 xf86-video-vesa
 xmobar
 xmonad
