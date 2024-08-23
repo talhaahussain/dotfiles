@@ -1,6 +1,6 @@
 # dotfiles
 
-Dotfiles for Arch Linux configuration.
+Dotfiles for various OS configurations.
 
 ### Installation, Setup and Usage
 
